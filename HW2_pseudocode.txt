@@ -1,0 +1,46 @@
+int main() {
+	-int array[number of rows][number of columns]
+	-int monthArray[12] = {the month_data.txt files}
+	-loop through the monthArray to get the files
+		for loop: 0 to 12 (number of months)
+			pointer to monthArray[i] to get the specific month file
+			makes sure it's not null
+			scan the item sales
+			puts it in the array[item][month]
+			MAKE SURE TO CLOSE THE FILE STREAM BEFORE ITERATING AGAIN
+	-printf("which program to run?") and get the user's input
+}
+
+register.c file:
+void printItems(rows, cols, array[][cols]){
+	-printf("what item to print?") and get user input (inputs the item code)
+	-printf("jan\tfeb\t etc etc") for all the months
+	-for loop!
+		if it's the last iteration:
+			don't put a "\t" at the end
+		else:
+			printf(the sales\t);
+}
+
+void total_Sales(rows, cols, array[][cols]){
+	-printf("items TAB sales \n")
+	-total = 0
+	-loop through the rows and add up the sales
+	-print out the item number and the sales
+	-total = 0 again to reset
+	-keep going until get to the end
+}
+
+void top_overall(rows, cols, array[][cols]){
+	-total = 0
+	-biggestsofar = 0
+	-biggestItem = 0
+	-loop through each row and add up the sales
+	-compare that total to the biggestsofar total
+		if bigger: switch
+		else: biggestsofar is the same
+	-also make sure that when update biggestsofar, update biggestItem
+	-at the end of for loop:
+		printf("the biggest item sales is item [whatever item]")
+}
+
